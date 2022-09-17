@@ -490,7 +490,7 @@ body {
 }
 .jobs__card a:hover .jobs__img_text,
 .jobs__card a:focus .jobs__img_text {
-  opacity: 1;
+  transform: translateY(0);
 }
 
 .jobs__filter {
@@ -502,6 +502,7 @@ body {
 .jobs__img_container {
   position: relative;
   max-height: 295px;
+  overflow: hidden;
 }
 .jobs__img {
   border-bottom: 1px solid #ececec;
@@ -517,8 +518,8 @@ body {
   line-height: 1.5;
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .jobs__container-text {
